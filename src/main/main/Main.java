@@ -18,7 +18,8 @@ public class Main {
 	public static void main(String args[]) throws Exception {
 		
 		WriterFile writerFile = new WriterFile();
-		Path path = Paths.get("target/index");
+		/*Apertura path e directory*/
+		Path path = Paths.get("lucene-index");
 		Directory directory = FSDirectory.open(path);
 		
 		Parser parser = new Parser();
@@ -36,6 +37,6 @@ public class Main {
 		
 		writerFile.writeOnFileTime(elapsedTime);
 		
-		System.out.println("Fine");
+		System.out.println("Fine.");
 	}	
 }

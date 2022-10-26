@@ -1,0 +1,315 @@
+cfs entry for: _1fr.fld
+doc 0
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value drama desk award
+  field 0
+    name cella
+    type string
+    value drama desk award
+  field 0
+    name cella
+    type string
+    value drama desk award
+  field 0
+    name cella
+    type string
+    value drama desk award
+  field 0
+    name cella
+    type string
+    value drama desk award
+  field 0
+    name cella
+    type string
+    value drama desk award
+  field 0
+    name cella
+    type string
+    value drama desk award
+  field 0
+    name cella
+    type string
+    value drama desk award
+doc 1
+  field 0
+    name cella
+    type string
+    value best musical
+  field 0
+    name cella
+    type string
+    value best book of a musical
+  field 0
+    name cella
+    type string
+    value best original score
+  field 0
+    name cella
+    type string
+    value best performance by a leading actor in a musical
+  field 0
+    name cella
+    type string
+    value best performance by a featured actor in a musical
+  field 0
+    name cella
+    type string
+    value best direction of a musical
+  field 0
+    name cella
+    type string
+    value best choreography
+  field 0
+    name cella
+    type string
+    value best scenic design
+  field 0
+    name cella
+    type string
+    value best costume design
+  field 0
+    name cella
+    type string
+    value best lighting design
+  field 0
+    name cella
+    type string
+    value outstanding musical
+  field 0
+    name cella
+    type string
+    value outstanding book of a musical
+  field 0
+    name cella
+    type string
+    value outstanding featured actor in a musical
+  field 0
+    name cella
+    type string
+    value outstanding director of a musical
+  field 0
+    name cella
+    type string
+    value outstanding choreography
+  field 0
+    name cella
+    type string
+    value outstanding music and lyrics
+  field 0
+    name cella
+    type string
+    value outstanding set design
+  field 0
+    name cella
+    type string
+    value outstanding costume design
+doc 2
+  field 0
+    name cella
+    type string
+    value best musical
+  field 0
+    name cella
+    type string
+    value john weidman
+  field 0
+    name cella
+    type string
+    value stephen sondheim
+  field 0
+    name cella
+    type string
+    value mako
+  field 0
+    name cella
+    type string
+    value isao sato
+  field 0
+    name cella
+    type string
+    value harold prince
+  field 0
+    name cella
+    type string
+    value patricia birch
+  field 0
+    name cella
+    type string
+    value boris aronson
+  field 0
+    name cella
+    type string
+    value florence klotz
+  field 0
+    name cella
+    type string
+    value tharon musser
+  field 0
+    name cella
+    type string
+    value outstanding musical
+  field 0
+    name cella
+    type string
+    value john weidman
+  field 0
+    name cella
+    type string
+    value haruki fujimoto
+  field 0
+    name cella
+    type string
+    value harold prince
+  field 0
+    name cella
+    type string
+    value patricia birch
+  field 0
+    name cella
+    type string
+    value stephen sondheim
+  field 0
+    name cella
+    type string
+    value boris aronson
+  field 0
+    name cella
+    type string
+    value florence klotz
+END
+checksum 00000000000070249359
+cfs entry for: _1fr.inf
+number of fields 1
+  name cella
+  number 0
+  index options DOCS
+  term vectors false
+  payloads false
+  norms false
+  doc values NONE
+  doc values gen -1
+  attributes 0
+  data dimensional count 0
+  index dimensional count 0
+  dimensional num bytes 0
+  soft-deletes false
+checksum 00000000001070385063
+cfs entry for: _1fr.pst
+field cella
+  term best book of a musical
+    doc 1
+  term best choreography
+    doc 1
+  term best costume design
+    doc 1
+  term best direction of a musical
+    doc 1
+  term best lighting design
+    doc 1
+  term best musical
+    doc 1
+    doc 2
+  term best original score
+    doc 1
+  term best performance by a featured actor in a musical
+    doc 1
+  term best performance by a leading actor in a musical
+    doc 1
+  term best scenic design
+    doc 1
+  term boris aronson
+    doc 2
+  term drama desk award
+    doc 0
+  term florence klotz
+    doc 2
+  term harold prince
+    doc 2
+  term haruki fujimoto
+    doc 2
+  term isao sato
+    doc 2
+  term john weidman
+    doc 2
+  term mako
+    doc 2
+  term outstanding book of a musical
+    doc 1
+  term outstanding choreography
+    doc 1
+  term outstanding costume design
+    doc 1
+  term outstanding director of a musical
+    doc 1
+  term outstanding featured actor in a musical
+    doc 1
+  term outstanding music and lyrics
+    doc 1
+  term outstanding musical
+    doc 1
+    doc 2
+  term outstanding set design
+    doc 1
+  term patricia birch
+    doc 2
+  term stephen sondheim
+    doc 2
+  term tharon musser
+    doc 2
+  term tony award
+    doc 0
+END
+checksum 00000000004264521391
+table of contents, size: 3
+  filename: _1fr.fld
+    start: 24
+    end: 3819
+  filename: _1fr.inf
+    start: 3843
+    end: 4144
+  filename: _1fr.pst
+    start: 4168
+    end: 5394
+table of contents begins at offset: 0000000000000005394

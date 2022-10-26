@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.Term;
@@ -30,17 +31,18 @@ public class MergeList {
 		IndexReader reader = DirectoryReader.open(directory); //obtain read access to the inverted indexes
 		IndexSearcher searcher = new IndexSearcher(reader); 
 		
-		Map<Integer,Integer> set2count = new TreeMap<Integer,Integer>();		//chiave: documento																	//valore: numero di volte che matcha con la query
+		Map<Integer,Integer> set2count = new TreeMap<Integer,Integer>();		//chiave: documento, valore: numero di volte che matcha con la query																//valore: numero di volte che matcha con la query
 
+		//scorre la colonna di query
 		for(Celle cell : queryColumn) {
 			String text = cell.getCleanedText().toLowerCase();
 			Query query = new TermQuery(new Term("cella", text));
 			TopDocs hits = searcher.search(query, reader.numDocs()); //search for all documents that match the query
 
+			//scorre tutti i documenti che matchano con la query e crea set2count
 			for (int i = 0; i < hits.scoreDocs.length; i++) { 
-				ScoreDoc scoreDoc = hits.scoreDocs[i]; 								//hits.scoreDocs[i] indica il documento 
-																					//hits.scoreDocs documenti che matchano con la query 
-				//Document doc = searcher.doc(scoreDoc.doc); //fetch returned document		//scoreDoc.doc è la posizione del documento
+				ScoreDoc scoreDoc = hits.scoreDocs[i]; 								//hits.scoreDocs[i] indica il documento 																	//hits.scoreDocs documenti che matchano con la query 
+				Document doc = searcher.doc(scoreDoc.doc); //fetch returned document		//scoreDoc.doc è la posizione del documento
 																							//doc è il documento
 				if(set2count.containsKey(scoreDoc.doc)) {
 					int count = set2count.get(scoreDoc.doc) + 1;

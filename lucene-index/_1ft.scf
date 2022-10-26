@@ -1,0 +1,102 @@
+cfs entry for: _1ft.fld
+doc 0
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+  field 0
+    name cella
+    type string
+    value tony award
+doc 1
+  field 0
+    name cella
+    type string
+    value best revival of a musical
+  field 0
+    name cella
+    type string
+    value best orchestrations
+  field 0
+    name cella
+    type string
+    value best scenic design
+  field 0
+    name cella
+    type string
+    value best costume design
+doc 2
+  field 0
+    name cella
+    type string
+    value best revival of a musical
+  field 0
+    name cella
+    type string
+    value jonathan tunick
+  field 0
+    name cella
+    type string
+    value rumi matsui
+  field 0
+    name cella
+    type string
+    value junko koshino
+END
+checksum 00000000001073190235
+cfs entry for: _1ft.inf
+number of fields 1
+  name cella
+  number 0
+  index options DOCS
+  term vectors false
+  payloads false
+  norms false
+  doc values NONE
+  doc values gen -1
+  attributes 0
+  data dimensional count 0
+  index dimensional count 0
+  dimensional num bytes 0
+  soft-deletes false
+checksum 00000000001070385063
+cfs entry for: _1ft.pst
+field cella
+  term best costume design
+    doc 1
+  term best orchestrations
+    doc 1
+  term best revival of a musical
+    doc 1
+    doc 2
+  term best scenic design
+    doc 1
+  term jonathan tunick
+    doc 2
+  term junko koshino
+    doc 2
+  term rumi matsui
+    doc 2
+  term tony award
+    doc 0
+END
+checksum 00000000003667806653
+table of contents, size: 3
+  filename: _1ft.fld
+    start: 24
+    end: 885
+  filename: _1ft.inf
+    start: 909
+    end: 1210
+  filename: _1ft.pst
+    start: 1234
+    end: 1564
+table of contents begins at offset: 0000000000000001564

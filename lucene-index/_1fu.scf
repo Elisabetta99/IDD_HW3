@@ -1,0 +1,195 @@
+cfs entry for: _1fu.fld
+doc 0
+  field 0
+    name cella
+    type string
+    value preceded by cary burkett
+  field 0
+    name cella
+    type string
+    value preceded by al milgrom
+  field 0
+    name cella
+    type string
+    value preceded by chris claremont
+  field 0
+    name cella
+    type string
+    value preceded by chris claremont
+  field 0
+    name cella
+    type string
+    value preceded by n/a
+  field 0
+    name cella
+    type string
+    value preceded by n/a
+  field 0
+    name cella
+    type string
+    value preceded by bruce jones
+  field 0
+    name cella
+    type string
+    value preceded by jeff jensen (volume 2)
+  field 0
+    name cella
+    type string
+    value preceded by dan slott
+doc 1
+  field 0
+    name cella
+    type string
+    value the spectacular spider-man writer 1985â€“1988
+  field 0
+    name cella
+    type string
+    value the incredible hulk writer 1987â€“1998
+  field 0
+    name cella
+    type string
+    value wolverine writer 1989
+  field 0
+    name cella
+    type string
+    value x-factor writer 1991â€“1993
+  field 0
+    name cella
+    type string
+    value spider-man 2099 writer 1992â€“1996
+  field 0
+    name cella
+    type string
+    value aquaman writer 1994â€“1998
+  field 0
+    name cella
+    type string
+    value the incredible hulk writer 2005
+  field 0
+    name cella
+    type string
+    value x-factor writer 2005â€“2014
+  field 0
+    name cella
+    type string
+    value she-hulk writer 2007â€“2009
+doc 2
+  field 0
+    name cella
+    type string
+    value succeeded by gerry conway
+  field 0
+    name cella
+    type string
+    value succeeded by joe casey
+  field 0
+    name cella
+    type string
+    value succeeded by archie goodwin
+  field 0
+    name cella
+    type string
+    value succeeded by scott lobdell
+  field 0
+    name cella
+    type string
+    value succeeded by ben raab & terry kavanagh
+  field 0
+    name cella
+    type string
+    value succeeded by dan abnett and andy lanning
+  field 0
+    name cella
+    type string
+    value succeeded by daniel way
+  field 0
+    name cella
+    type string
+    value succeeded by n/a
+  field 0
+    name cella
+    type string
+    value succeeded by charles soule (volume 3)
+END
+checksum 00000000001908413816
+cfs entry for: _1fu.inf
+number of fields 1
+  name cella
+  number 0
+  index options DOCS
+  term vectors false
+  payloads false
+  norms false
+  doc values NONE
+  doc values gen -1
+  attributes 0
+  data dimensional count 0
+  index dimensional count 0
+  dimensional num bytes 0
+  soft-deletes false
+checksum 00000000001070385063
+cfs entry for: _1fu.pst
+field cella
+  term aquaman writer 1994â€“1998
+    doc 1
+  term preceded by al milgrom
+    doc 0
+  term preceded by bruce jones
+    doc 0
+  term preceded by cary burkett
+    doc 0
+  term preceded by chris claremont
+    doc 0
+  term preceded by dan slott
+    doc 0
+  term preceded by jeff jensen (volume 2)
+    doc 0
+  term preceded by n/a
+    doc 0
+  term she-hulk writer 2007â€“2009
+    doc 1
+  term spider-man 2099 writer 1992â€“1996
+    doc 1
+  term succeeded by archie goodwin
+    doc 2
+  term succeeded by ben raab & terry kavanagh
+    doc 2
+  term succeeded by charles soule (volume 3)
+    doc 2
+  term succeeded by dan abnett and andy lanning
+    doc 2
+  term succeeded by daniel way
+    doc 2
+  term succeeded by gerry conway
+    doc 2
+  term succeeded by joe casey
+    doc 2
+  term succeeded by n/a
+    doc 2
+  term succeeded by scott lobdell
+    doc 2
+  term the incredible hulk writer 1987â€“1998
+    doc 1
+  term the incredible hulk writer 2005
+    doc 1
+  term the spectacular spider-man writer 1985â€“1988
+    doc 1
+  term wolverine writer 1989
+    doc 1
+  term x-factor writer 1991â€“1993
+    doc 1
+  term x-factor writer 2005â€“2014
+    doc 1
+END
+checksum 00000000001819585686
+table of contents, size: 3
+  filename: _1fu.fld
+    start: 24
+    end: 2253
+  filename: _1fu.inf
+    start: 2277
+    end: 2578
+  filename: _1fu.pst
+    start: 2602
+    end: 3829
+table of contents begins at offset: 0000000000000003829

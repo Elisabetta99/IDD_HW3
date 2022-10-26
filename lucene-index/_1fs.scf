@@ -1,0 +1,149 @@
+cfs entry for: _1fs.fld
+doc 0
+  field 0
+    name cella
+    type string
+    value laurence olivier award
+  field 0
+    name cella
+    type string
+    value laurence olivier award
+  field 0
+    name cella
+    type string
+    value laurence olivier award
+  field 0
+    name cella
+    type string
+    value laurence olivier award
+  field 0
+    name cella
+    type string
+    value laurence olivier award
+  field 0
+    name cella
+    type string
+    value laurence olivier award
+  field 0
+    name cella
+    type string
+    value laurence olivier award
+doc 1
+  field 0
+    name cella
+    type string
+    value best performance in a supporting role in a musical
+  field 0
+    name cella
+    type string
+    value best performance in a supporting role in a musical
+  field 0
+    name cella
+    type string
+    value best director
+  field 0
+    name cella
+    type string
+    value best theatre choreographer
+  field 0
+    name cella
+    type string
+    value best costume design
+  field 0
+    name cella
+    type string
+    value best lighting design
+  field 0
+    name cella
+    type string
+    value best sound design
+doc 2
+  field 0
+    name cella
+    type string
+    value richard henders
+  field 0
+    name cella
+    type string
+    value jã©rã´me pradon
+  field 0
+    name cella
+    type string
+    value gary griffin
+  field 0
+    name cella
+    type string
+    value karen bruce
+  field 0
+    name cella
+    type string
+    value mara blumenfeld
+  field 0
+    name cella
+    type string
+    value hugh vanstone
+  field 0
+    name cella
+    type string
+    value nick lidster
+END
+checksum 00000000003345848115
+cfs entry for: _1fs.inf
+number of fields 1
+  name cella
+  number 0
+  index options DOCS
+  term vectors false
+  payloads false
+  norms false
+  doc values NONE
+  doc values gen -1
+  attributes 0
+  data dimensional count 0
+  index dimensional count 0
+  dimensional num bytes 0
+  soft-deletes false
+checksum 00000000001070385063
+cfs entry for: _1fs.pst
+field cella
+  term best costume design
+    doc 1
+  term best director
+    doc 1
+  term best lighting design
+    doc 1
+  term best performance in a supporting role in a musical
+    doc 1
+  term best sound design
+    doc 1
+  term best theatre choreographer
+    doc 1
+  term gary griffin
+    doc 2
+  term hugh vanstone
+    doc 2
+  term jã©rã´me pradon
+    doc 2
+  term karen bruce
+    doc 2
+  term laurence olivier award
+    doc 0
+  term mara blumenfeld
+    doc 2
+  term nick lidster
+    doc 2
+  term richard henders
+    doc 2
+END
+checksum 00000000002785209854
+table of contents, size: 3
+  filename: _1fs.fld
+    start: 24
+    end: 1614
+  filename: _1fs.inf
+    start: 1638
+    end: 1939
+  filename: _1fs.pst
+    start: 1963
+    end: 2525
+table of contents begins at offset: 0000000000000002525

@@ -8,25 +8,25 @@ public class WriterFile {
 	
 	public void writeOnFileTime(long elapsedTime) {
 		try {
-			FileWriter myWriter = new FileWriter("Esperimenti.txt", true);
+			FileWriter myWriter = new FileWriter("provaTemp.txt", true);
 			myWriter.write("Tempo impiegato: " + elapsedTime/(60*1000F) + " minuti\n\n");
 			myWriter.close();
 		}
 		catch (IOException e) {
-			System.out.println("An error occurred.");
+			System.out.println("Errore!");
 			e.printStackTrace();
 		}
 	}
 	
 	
-	public void writeOnFileQuery(int num) {
+	public void writeOnFileQuery(int numRows) {
 		try {
-			FileWriter myWriter = new FileWriter("Esperimenti.txt", true);
-			myWriter.write("Esperimento con query " + num + ", con k=2: \n");
+			FileWriter myWriter = new FileWriter("prova.txt", true);
+			myWriter.write("Prova: " + "\n query con " + numRows + ", con k=2: \n");
 			myWriter.close();
 		}
 		catch (IOException e) {
-			System.out.println("An error occurred.");
+			System.out.println("Errore!");
 			e.printStackTrace();
 		}
 	}
@@ -34,14 +34,14 @@ public class WriterFile {
 	
 	public void writeOnFileMergedMap(Map<Integer,Integer> orderedSet2count) {
 		try {
-			FileWriter myWriter = new FileWriter("Esperimenti.txt", true);
+			FileWriter myWriter = new FileWriter("prova.txt", true);
 			for (Integer i : orderedSet2count.keySet()) {
-				myWriter.write(i + " -> " + orderedSet2count.get(i) + "\n");
+				myWriter.write(i + " = " + orderedSet2count.get(i) + "\n");
 			}
 			myWriter.close();
 		}
 		catch (IOException e) {
-			System.out.println("An error occurred.");
+			System.out.println("Errore!");
 			e.printStackTrace();
 		}
 	}

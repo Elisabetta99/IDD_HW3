@@ -24,11 +24,6 @@ public class InvertedIndex {
 
 		try {
 			this.config = new IndexWriterConfig(); 
-			SimpleTextCodec codec = new SimpleTextCodec();
-			config.setCodec(codec);
-			if (codec != null) {
-				config.setCodec(codec);
-			}
 			this.writer = new IndexWriter(directory, config);
 
 		} catch (IOException e) {
@@ -45,9 +40,7 @@ public class InvertedIndex {
 				doc.add(new StringField("cella", c.getCleanedText().toLowerCase(), Field.Store.YES));
 			}
 			writer.addDocument(doc);  /* add Documents to be indexed */
-		}
-		writer.commit();
-		
+		}		
 		return writer;
 	}
 	
