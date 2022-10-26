@@ -38,7 +38,7 @@ public class WriterFile {
 			for (Integer i : orderedSet2count.keySet()) {
 				myWriter.write(i + " = " + orderedSet2count.get(i) + "\n");
 			}
-			myWriter.close();
+			myWriter.close(); 
 		}
 		catch (IOException e) {
 			System.out.println("Errore!");

@@ -19,6 +19,6 @@ public class ParserBeforeMain {
 		Parser parser = new Parser();
 		parser.parserJsonTables(directory);
 		
-		System.out.println("Finito il parser");
+		System.out.println("Finito il parser.");
 	}
 }

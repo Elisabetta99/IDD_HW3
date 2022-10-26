@@ -31,10 +31,10 @@ public class Prova {
 	private Coordinate coord3 = new Coordinate(0,1);
 	private Coordinate coord4 = new Coordinate(1,1);
 	
-	private Celle c1 = new Celle(false, coord1, "ciao1");
-	private Celle c2 = new Celle(true, coord2, "ciao2");
-	private Celle c3 = new Celle(false, coord3, "ciao3");
-	private Celle c4 = new Celle(false, coord4, "ciao4");
+	private Celle c1 = new Celle(false, coord1, "prova_1");
+	private Celle c2 = new Celle(true, coord2, "prova_2");
+	private Celle c3 = new Celle(false, coord3, "prova_3");
+	private Celle c4 = new Celle(false, coord4, "prova_4");
 	
 	private Collection<Celle> collections = new ArrayList<Celle>();
 	private Map<Integer, List<Celle>> mappaColonne = new HashMap<>();
