@@ -54,6 +54,4 @@ public class Celle {
 	public String toString() {
 		return "Cell [isHeader=" + isHeader + ", coordinates=" + coordinates + ", cleanedText=" + cleanedText + "] " + "\n";
 	}
-	
-	
 }

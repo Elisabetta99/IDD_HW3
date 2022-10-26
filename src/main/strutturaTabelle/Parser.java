@@ -23,7 +23,8 @@ public class Parser {
 		InvertedIndex invertedIndex = new InvertedIndex(directory);
 		invertedIndex.getWriter().deleteAll();
 
-		FileInputStream fis = new FileInputStream("tables.txt");       
+		//FileInputStream fis = new FileInputStream("tabelleProva.txt");     
+		FileInputStream fis = new FileInputStream("tables.txt");
 		Scanner sc = new Scanner(fis);    //file to be scanned  
 
 		//returns true if there is another line to read  

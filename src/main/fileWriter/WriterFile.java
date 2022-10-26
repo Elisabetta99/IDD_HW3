@@ -22,7 +22,7 @@ public class WriterFile {
 	public void writeOnFileQuery(int numRows) {
 		try {
 			FileWriter myWriter = new FileWriter("prova.txt", true);
-			myWriter.write("Prova: " + "\n query con " + numRows + ", con k=2: \n");
+			myWriter.write("Prova: " + " query con " + numRows + ", e k=2: \n");
 			myWriter.close();
 		}
 		catch (IOException e) {
