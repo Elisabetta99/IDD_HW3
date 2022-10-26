@@ -42,14 +42,11 @@ public class Statistics {
 	private Path path = Paths.get("lucene-index");
 	
 	
-	private Map<Integer,Integer> distrNumColumns = new HashMap<Integer,Integer>(); 	//chiave: numero di colonne
-																					//valore: quante tabelle hanno quel numero di colonne
-	private Map<Integer,Integer> distrNumRows = new HashMap<Integer,Integer>();		//chiave: numero di righe
-																					//valore: quante tabelle hanno quel numero di righe
-	private Map<Integer,Integer> distrDistValues4Columns = new HashMap<Integer,Integer>();  //chiave: numero valori distinti
-																							//valore: quante colonne hanno quel numero di valori distinti
-	private Map<Integer,Integer> distrDistValues4Tables = new HashMap<Integer,Integer>();	//chiave: numero valori distinti
-																							//valore: quante tabelle hanno quel numero di valori distinti
+	private Map<Integer,Integer> distrNumColumns = new HashMap<Integer,Integer>(); 			//chiave: numero di colonne, valore: quante tabelle hanno quel numero di colonne
+	private Map<Integer,Integer> distrNumRows = new HashMap<Integer,Integer>();				//chiave: numero di righe, valore: quante tabelle hanno quel numero di righe
+	private Map<Integer,Integer> distrDistValues4Columns = new HashMap<Integer,Integer>();  //chiave: numero valori distinti, valore: quante colonne hanno quel numero di valori distinti
+	private Map<Integer,Integer> distrDistValues4Tables = new HashMap<Integer,Integer>();	//chiave: numero valori distinti, valore: quante tabelle hanno quel numero di valori distinti
+	
 	
 	@Before
 	public void setUp() throws IOException {
@@ -58,16 +55,15 @@ public class Statistics {
 		invertedIndex.getWriter().deleteAll();
 	}
 	
-	
 	@Test
 	public void parserJsonTablesStatistics() throws IOException{
 		
 		FileInputStream fis = new FileInputStream("tables.txt");       
-		Scanner sc = new Scanner(fis);    //file to be scanned  
+		Scanner sc = new Scanner(fis);   //file to be scanned  
 
 		//returns true if there is another line to read  
 		while(sc.hasNextLine()) {  
-			totTables = totTables + 1;  					//numero di tabelle totali
+			totTables = totTables + 1;  //numero di tabelle totali
 			
 			String line = sc.nextLine();
 
@@ -86,7 +82,6 @@ public class Statistics {
 				distrNumColumns.put((Integer)numColumns, 1);
 			}
 			
-			
 			//RIGHE
 			numRows = table.getMappaColonne().get(0).size();		//conto il numero di righe di una tabella
 			totRows = totRows + numRows;							//conto il numero di righe totali
@@ -98,10 +93,10 @@ public class Statistics {
 				distrNumRows.put((Integer)numRows, 1);
 			}
 			
-			
 			//VALORI NULLI E DISTINTI
 			Set<String> distValues4TableSet = new HashSet<>();
 			numNullValues = 0;
+			
 			for(int i : table.getMappaColonne().keySet()) {
 				Set<String> distValues4ColumnSet = new HashSet<>(); 
 				List<Celle> column = table.getMappaColonne().get(i);
@@ -114,7 +109,6 @@ public class Statistics {
 						distValues4TableSet.add(c.getCleanedText());
 					}
 				}
-	
 				int num = distValues4ColumnSet.size();  						//chiave di distrDistValues4Columns
 				if(distrDistValues4Columns.containsKey((Integer)num)) {			//distribuzione del numero di valori distinti per colonna 
 					distrDistValues4Columns.put((Integer)num, distrDistValues4Columns.get((Integer)num) + 1);
@@ -123,7 +117,6 @@ public class Statistics {
 					distrDistValues4Columns.put((Integer)num, 1);
 				} 
 			}
-			
 			totNullValues = totNullValues + numNullValues;		//numero di valori nulli in tutte le tabelle
 			
 			int num1 = distValues4TableSet.size();  						//chiave di distrDistValues4Tables
@@ -134,9 +127,7 @@ public class Statistics {
 				distrDistValues4Tables.put((Integer)num1, 1);
 			} 
 		}  
-		
 		sc.close(); 
-		
 		
 		//medie
 		avgColumns = totColumns/totTables;  		//numero medio di colonne
@@ -196,7 +187,7 @@ public class Statistics {
 				myWriter.write(i + " -> " + distrDistValues4Tables.get(i) + "\n");
 			}
 			myWriter.close();
-			//System.out.println("Successfully wrote to the file.");
+			System.out.println("Successfully wrote to the file.");
 		}
 		catch (IOException e) {
 			System.out.println("An error occurred.");
