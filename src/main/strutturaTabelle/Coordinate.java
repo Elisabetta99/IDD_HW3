@@ -38,5 +38,4 @@ public class Coordinate {
 	public String toString() {
 		return "Coordinates [row=" + row + ", column=" + column + "]";
 	}
-
 }

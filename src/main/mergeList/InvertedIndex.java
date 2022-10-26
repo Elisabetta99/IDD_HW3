@@ -24,25 +24,21 @@ public class InvertedIndex {
 
 		try {
 			this.config = new IndexWriterConfig(); 
-
 			SimpleTextCodec codec = new SimpleTextCodec();
 			config.setCodec(codec);
 			if (codec != null) {
 				config.setCodec(codec);
 			}
-			
 			this.writer = new IndexWriter(directory, config);
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			this.writer = null;
 		}
 	}
 
 
-	public void indexing(Tabelle table) throws Exception{
-
+	public IndexWriter indexing(Tabelle table) throws Exception {
 		for(List<Celle> column : table.getMappaColonne().values()) {
 			Document doc = new Document();
 			for(Celle c : column) {
@@ -51,6 +47,8 @@ public class InvertedIndex {
 			writer.addDocument(doc);  /* add Documents to be indexed */
 		}
 		writer.commit();
+		
+		return writer;
 	}
 	
 
@@ -70,6 +68,4 @@ public class InvertedIndex {
 	public void setConfig(IndexWriterConfig config) {
 		this.config = config;
 	}
-
-
 }

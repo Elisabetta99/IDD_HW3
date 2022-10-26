@@ -156,7 +156,7 @@ public class Statistics {
 		*/
 		writeOnFile();
 	}
-	
+
 	public void writeOnFile() {
 		try {
 			FileWriter myWriter = new FileWriter("statistics.txt");

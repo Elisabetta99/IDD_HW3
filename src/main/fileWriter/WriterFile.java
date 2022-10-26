@@ -11,7 +11,6 @@ public class WriterFile {
 			FileWriter myWriter = new FileWriter("Esperimenti.txt", true);
 			myWriter.write("Tempo impiegato: " + elapsedTime/(60*1000F) + " minuti\n\n");
 			myWriter.close();
-			//System.out.println("Successfully wrote to the file.");
 		}
 		catch (IOException e) {
 			System.out.println("An error occurred.");

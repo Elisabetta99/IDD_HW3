@@ -29,8 +29,8 @@ public class MergeList {
 		WriterFile writerFile = new WriterFile();
 		IndexReader reader = DirectoryReader.open(directory); //obtain read access to the inverted indexes
 		IndexSearcher searcher = new IndexSearcher(reader); 
-		Map<Integer,Integer> set2count = new TreeMap<Integer,Integer>();		//chiave: documento
-																				//valore: numero di volte che matcha con la query
+		
+		Map<Integer,Integer> set2count = new TreeMap<Integer,Integer>();		//chiave: documento																	//valore: numero di volte che matcha con la query
 
 		for(Celle cell : queryColumn) {
 			String text = cell.getCleanedText().toLowerCase();

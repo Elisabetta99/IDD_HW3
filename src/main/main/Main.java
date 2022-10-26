@@ -2,6 +2,7 @@ package main.main;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
@@ -17,7 +18,7 @@ public class Main {
 	public static void main(String args[]) throws Exception {
 		
 		WriterFile writerFile = new WriterFile();
-		Path path = Paths.get("lucene-index");
+		Path path = Paths.get("target/index");
 		Directory directory = FSDirectory.open(path);
 		
 		Parser parser = new Parser();
@@ -29,7 +30,7 @@ public class Main {
 																				//valore: numero di volte che matcha con la query
 		writerFile.writeOnFileQuery(QUERY_NUMBER);
 		mergeList.mergeList(table.getMappaColonne().get(QUERY_NUMBER), directory);
-		
+
 		long elapsedTime = System.currentTimeMillis() - start; //nanoTime() - start;
 		System.out.println("Tempo impiegato: " + elapsedTime/(60*1000F) + " minuti\n");
 		
