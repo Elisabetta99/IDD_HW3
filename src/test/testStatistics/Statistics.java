@@ -1,4 +1,4 @@
-package testStatistics;
+package test.testStatistics;
 
 
 import java.io.FileInputStream;
@@ -20,9 +20,8 @@ import org.junit.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import jsonparser.Cell;
-import jsonparser.Table;
-import mergeList.InvertedIndex;
+import main.strutturaTabelle.*;
+import main.mergeList.InvertedIndex;
 
 public class Statistics {
 	
@@ -73,7 +72,7 @@ public class Statistics {
 			String line = sc.nextLine();
 
 			// Deserialization into the `Table` class
-			Table table = objectMapper.readValue(line, Table.class);
+			Tabelle table = objectMapper.readValue(line, Tabelle.class);
 			table.createCells();
 			
 			//COLONNE
@@ -105,8 +104,8 @@ public class Statistics {
 			numNullValues = 0;
 			for(int i : table.getMappaColonne().keySet()) {
 				Set<String> distValues4ColumnSet = new HashSet<>(); 
-				List<Cell> column = table.getMappaColonne().get(i);
-				for(Cell c : column) {
+				List<Celle> column = table.getMappaColonne().get(i);
+				for(Celle c : column) {
 					if(c.getCleanedText().equals("")) {
 						numNullValues = numNullValues + 1;		//numero di valori nulli in ogni tabella
 					}

@@ -1,4 +1,4 @@
-package main;
+package main.main;
 
 import java.nio.file.Path;
 
@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
-import strutturaTabelle.*;
+import main.strutturaTabelle.*;
 
 public class ParserBeforeMain {
 	

@@ -1,4 +1,4 @@
-package jsonparser;
+package test.strutturaTabelle;
 
 
 import java.util.ArrayList;
@@ -9,6 +9,10 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Test;
+
+import main.strutturaTabelle.Celle;
+import main.strutturaTabelle.Coordinate;
+import main.strutturaTabelle.Tabelle;
 
 public class TableTest {
 
@@ -32,7 +36,7 @@ public class TableTest {
 		collections.add(c4);
 		collections.add(c1);
 
-		Table table = new Table();
+		Tabelle table = new Tabelle();
 		table.setCollectionCells(collections);
 		table.setMappaColonne(mappaColonne);
 		table.createCells();

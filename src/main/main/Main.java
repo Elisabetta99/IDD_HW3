@@ -1,14 +1,14 @@
-package main;
+package main.main;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
-import fileWriter.WriterFile;
-import jsonparser.Parser;
-import jsonparser.Table;
-import mergeList.MergeList;
+import main.fileWriter.WriterFile;
+import main.strutturaTabelle.Parser;
+import main.strutturaTabelle.Tabelle;
+import main.mergeList.MergeList;
 
 public class Main {
 
@@ -21,7 +21,7 @@ public class Main {
 		Directory directory = FSDirectory.open(path);
 		
 		Parser parser = new Parser();
-		Table table = parser.parserJsonQuery();
+		Tabelle table = parser.parserJsonQuery();
 		
 		MergeList mergeList = new MergeList();
 		long start = System.currentTimeMillis();

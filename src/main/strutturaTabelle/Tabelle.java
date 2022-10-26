@@ -1,4 +1,4 @@
-package strutturaTabelle;
+package main.strutturaTabelle;
 
 import java.util.ArrayList;
 import java.util.Collection;

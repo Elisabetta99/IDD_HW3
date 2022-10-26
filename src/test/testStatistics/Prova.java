@@ -1,4 +1,4 @@
-package testStatistics;
+package test.testStatistics;
 
 import static org.junit.Assert.*;
 
@@ -21,10 +21,8 @@ import org.junit.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import jsonparser.Cell;
-import jsonparser.Coordinates;
-import jsonparser.Table;
-import mergeList.InvertedIndex;
+import main.strutturaTabelle.*;
+import main.mergeList.InvertedIndex;
 
 public class Prova {
 	
@@ -50,7 +48,7 @@ public class Prova {
 		collections.add(c4);
 		collections.add(c1);
 		
-		Table table = new Table();
+		Tabelle table = new Tabelle();
 		table.setCollectionCells(collections);
 		table.setMappaColonne(mappaColonne);
 		table.createCells();
@@ -116,8 +114,8 @@ public class Prova {
 		Set<String> distValues4TableSet = new HashSet<>();
 		for(int i : table.getMappaColonne().keySet()) {
 			Set<String> distValues4ColumnSet = new HashSet<>(); 
-			List<Cell> column = table.getMappaColonne().get(i);
-			for(Cell c : column) {
+			List<Celle> column = table.getMappaColonne().get(i);
+			for(Celle c : column) {
 				if(c.getCleanedText().equals("")) {
 					numNullValues = numNullValues + 1;		//numero di valori nulli in ogni tabella
 				}

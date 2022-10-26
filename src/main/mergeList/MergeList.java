@@ -1,4 +1,4 @@
-package mergeList;
+package main.mergeList;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -19,12 +19,12 @@ import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 
-import fileWriter.WriterFile;
-import jsonparser.Cell;
+import main.fileWriter.WriterFile;
+import main.strutturaTabelle.Celle;
 
 public class MergeList {
 
-	public void mergeList(List<Cell> queryColumn, Directory directory) throws Exception {
+	public void mergeList(List<Celle> queryColumn, Directory directory) throws Exception {
 
 		WriterFile writerFile = new WriterFile();
 		IndexReader reader = DirectoryReader.open(directory); //obtain read access to the inverted indexes
@@ -32,7 +32,7 @@ public class MergeList {
 		Map<Integer,Integer> set2count = new TreeMap<Integer,Integer>();		//chiave: documento
 																				//valore: numero di volte che matcha con la query
 
-		for(Cell cell : queryColumn) {
+		for(Celle cell : queryColumn) {
 			String text = cell.getCleanedText().toLowerCase();
 			Query query = new TermQuery(new Term("cella", text));
 			TopDocs hits = searcher.search(query, reader.numDocs()); //search for all documents that match the query

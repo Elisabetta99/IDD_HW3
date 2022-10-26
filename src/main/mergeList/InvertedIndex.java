@@ -1,4 +1,4 @@
-package mergeList;
+package main.mergeList;
 
 import java.io.IOException;
 
@@ -12,7 +12,7 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.Directory;
 
-import strutturaTabelle.*;
+import main.strutturaTabelle.*;
 
 
 public class InvertedIndex {

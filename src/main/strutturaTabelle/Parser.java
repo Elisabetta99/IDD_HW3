@@ -1,4 +1,4 @@
-package strutturaTabelle;
+package main.strutturaTabelle;
 
 import java.io.FileInputStream;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ import org.apache.lucene.store.Directory;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import mergeList.InvertedIndex;
+import main.mergeList.InvertedIndex;
 
 public class Parser {
 
