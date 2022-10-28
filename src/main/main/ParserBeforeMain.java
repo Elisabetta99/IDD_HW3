@@ -12,7 +12,8 @@ import main.strutturaTabelle.*;
 public class ParserBeforeMain {
 	
 	public static void main(String args[]) throws Exception {
-
+	    
+	    /*Apertura path e directory*/
 		Path path = Paths.get("lucene-index");
 		Directory directory = FSDirectory.open(path);
 

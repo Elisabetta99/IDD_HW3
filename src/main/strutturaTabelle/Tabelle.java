@@ -9,24 +9,25 @@ import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/*selezione dei campi della tabella da ignorare nel file json*/
 @JsonIgnoreProperties({"_id", "className", "id", "beginIndex", "endIndex", "referenceContext", "type", "classe", "headersCleaned", "keyColumn"})
 
 public class Tabelle {
 
-	@JsonProperty("cells")
+	@JsonProperty("cells") //collezione non ordinata delle celle della tabella
 	private Collection<Celle> collectionCells;
 
-	@JsonProperty("maxDimensions")
+	@JsonProperty("maxDimensions") //massima dimensione della tabella
 	private MaxDim maxDimension;
 
-	private Map<Integer, List<Celle>> mappaColonne;
+	private Map<Integer, List<Celle>> mappaColonne; //mappa delle colonne della tabella. chiave: numero della colonna, valore: lista delle celle della colonna
 
 	public Tabelle() {
 		this.mappaColonne = new HashMap<>();
 	}
 
 	//input: collezione di celle
-	//output: mappa di colonne<int, lista di celle che formano una colonna>
+	//output: mappa di colonne
 	public void createCells() {
 		List<Celle> temp = null;
 		for(Celle c : this.collectionCells) {

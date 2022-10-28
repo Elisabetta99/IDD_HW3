@@ -26,7 +26,7 @@ import main.mergeList.InvertedIndex;
 public class Statistics {
 	
 	private int totTables = 0;
-	private int numColumns = 0;
+	private int numColumns = 0;    
 	private int totColumns = 0;
 	private int avgColumns = 0;
 	
@@ -59,19 +59,17 @@ public class Statistics {
 	public void parserJsonTablesStatistics() throws IOException{
 		
 		FileInputStream fis = new FileInputStream("tables.txt");       
-		Scanner sc = new Scanner(fis);   //file to be scanned  
+		Scanner sc = new Scanner(fis);   //file da scansionare 
 
-		//returns true if there is another line to read  
 		while(sc.hasNextLine()) {  
 			totTables = totTables + 1;  //numero di tabelle totali
 			
 			String line = sc.nextLine();
 
-			// Deserialization into the `Table` class
 			Tabelle table = objectMapper.readValue(line, Tabelle.class);
 			table.createCells();
 			
-			//COLONNE
+			/*Colonne*/
 			numColumns = table.getMappaColonne().size();				//numero di colonne di una tabella
 			totColumns = totColumns + numColumns;						//numero di colonne totali
 			
@@ -82,7 +80,7 @@ public class Statistics {
 				distrNumColumns.put((Integer)numColumns, 1);
 			}
 			
-			//RIGHE
+			/*Righe*/
 			numRows = table.getMappaColonne().get(0).size();		//conto il numero di righe di una tabella
 			totRows = totRows + numRows;							//conto il numero di righe totali
 			
@@ -93,7 +91,7 @@ public class Statistics {
 				distrNumRows.put((Integer)numRows, 1);
 			}
 			
-			//VALORI NULLI E DISTINTI
+			/*Valori nulli e distinti*/
 			Set<String> distValues4TableSet = new HashSet<>();
 			numNullValues = 0;
 			
@@ -129,22 +127,11 @@ public class Statistics {
 		}  
 		sc.close(); 
 		
-		//medie
+		/*Medie*/
 		avgColumns = totColumns/totTables;  		//numero medio di colonne
 		avgRows = totRows/totTables;				//numero medio di righe
 		avgNullValues = totNullValues/totTables;	//numero medio di valori nulli
 	
-		/*for (Integer i : distrDistValues4Columns.keySet()) {
-			System.out.println(i + " -> " + distrDistValues4Columns.get(i));
-		}
-		System.out.println("size: " + distrDistValues4Columns.size() + "\n");
-		
-		
-		for (Integer i : distrDistValues4Tables.keySet()) {
-			System.out.println(i + " -> " + distrDistValues4Tables.get(i));
-		}
-		System.out.println("size: " + distrDistValues4Tables.size() + "\n");
-		*/
 		writeOnFile();
 	}
 
@@ -159,7 +146,7 @@ public class Statistics {
 			myWriter.write("Numero totale di valori nulli per tabella: " + totNullValues + "\n");
 			myWriter.write("Numero medio di valori nulli per tabella: " + avgNullValues + "\n\n");
 			
-			//per scrivere mappe su file
+			/*scrive mappe su file*/
 			myWriter.write("Distribuzione numero di colonne (quante tabelle hanno 1, 2, 3, 4, etc. colonne) " + "\n");
 			myWriter.write("[Chiave: numero di colonne, Valore: quante tabelle hanno quel numero di colonne] " + "\n");
 			for (Integer i : distrNumColumns.keySet()) {
@@ -187,10 +174,10 @@ public class Statistics {
 				myWriter.write(i + " -> " + distrDistValues4Tables.get(i) + "\n");
 			}
 			myWriter.close();
-			System.out.println("Successfully wrote to the file.");
+			System.out.println("Scritto correttamente nel file.");
 		}
 		catch (IOException e) {
-			System.out.println("An error occurred.");
+			System.out.println("Errore!");
 			e.printStackTrace();
 		}
 	}

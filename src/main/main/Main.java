@@ -13,7 +13,7 @@ import main.mergeList.MergeList;
 
 public class Main {
 
-	private static final int QUERY_NUMBER = 4;
+	private static final int QUERY_NUMBER = 4; //QUERY_NUMBER: numero della colonna della query
 	
 	public static void main(String args[]) throws Exception {
 		
