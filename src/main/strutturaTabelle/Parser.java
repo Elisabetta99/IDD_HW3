@@ -27,7 +27,7 @@ public class Parser {
 		//FileInputStream fis = new FileInputStream("tabelleProva.txt");     
 		FileInputStream fis = new FileInputStream("tables.txt");
 		
-		Scanner sc = new Scanner(fis);    //file to be scanned  
+		Scanner sc = new Scanner(fis);    //file da scansionare 
 
 		while(sc.hasNextLine()) {  
 			String line = sc.nextLine();
