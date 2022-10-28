@@ -28,8 +28,9 @@ public class Main {
 		
 		MergeList mergeList = new MergeList();
 		long start = System.currentTimeMillis();
-		System.out.println("Esperimento con query: " + QUERY_NUMBER);			//chiave: documento
-																				//valore: numero di volte che matcha con la query
+		
+		System.out.println("Esperimento con query: " + QUERY_NUMBER);			//chiave: documento, valore: numero di volte che matcha con la query
+		
 		writerFile.writeOnFileQuery(QUERY_NUMBER);
 		mergeList.mergeList(table.getMappaColonne().get(QUERY_NUMBER), directory);
 
