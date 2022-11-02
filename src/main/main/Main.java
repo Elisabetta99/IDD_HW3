@@ -76,6 +76,7 @@ public class Main {
 		writerFile.writeOnFileQuery(QUERY_NUMBER);
 		
 		MergeList mergeList = new MergeList();
+		System.out.println("merge");
 		mergeList.mergeList(table.getMappaColonne().get(QUERY_NUMBER), directory);
 
 		directory.close();

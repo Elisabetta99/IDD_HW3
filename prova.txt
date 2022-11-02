@@ -4,3 +4,6 @@ Prova:  query con 4, e k=2:
 Prova:  query con 4, e k=2: 
 4 = 13
 11 = 13
+Prova:  query con 4, e k=2: 
+Prova:  query con 4, e k=2: 
+Prova:  query con 4, e k=2: 

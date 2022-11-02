@@ -16,7 +16,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 
-public class Statistics extends Thread {
+public class Statistics {
 
     private String inputFile;
     private BufferedReader bufferR;
@@ -235,8 +235,8 @@ public class Statistics extends Thread {
                 break;
             }
 
-            JsonElement jsonTree = JsonParser.parseString(s);
-            JsonObject table = jsonTree.getAsJsonObject();
+            JsonElement element = JsonParser.parseString(s);
+            JsonObject table = element.getAsJsonObject();
             JsonArray cells = table.getAsJsonArray("cells");
 
             int colonne = table.getAsJsonObject("maxDimensions").get("column").getAsInt();
