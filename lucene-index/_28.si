@@ -1,0 +1,39 @@
+    version 8.10.0
+    min version 8.10.0
+    number of documents 88281
+    uses compound file false
+    diagnostics 12
+      key os
+      value Windows 10
+      key java.version
+      value 11.0.8-internal
+      key os.arch
+      value amd64
+      key java.runtime.version
+      value 11.0.8-internal+0-adhoc..jdk11u
+      key source
+      value merge
+      key os.version
+      value 10.0
+      key java.vendor
+      value N/A
+      key java.vm.version
+      value 11.0.8-internal+0-adhoc..jdk11u
+      key lucene.version
+      value 8.10.0
+      key mergeMaxNumSegments
+      value -1
+      key mergeFactor
+      value 10
+      key timestamp
+      value 1667386864206
+    attributes 0
+    files 5
+      file _28.len
+      file _28.inf
+      file _28.pst
+      file _28.fld
+      file _28.si
+    id —€f\\ä¥MèëCXëÄ3¨
+    sort 0
+checksum 00000000002692646173

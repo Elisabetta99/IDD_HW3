@@ -57,10 +57,9 @@ public class Main {
 		System.out.println("Fine parser.");
 		
 		/*Stampa statistiche*/
-		System.out.println("\nElaborare le statistiche? [y/n]");
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("\nElaborare le statistiche? [y/n]");
 		String sc = scanner.next();
-		sc = scanner.next();
 
         if(sc.equals("y") ) {
             Statistics stats = new Statistics(confPath);

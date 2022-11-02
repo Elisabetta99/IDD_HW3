@@ -1,0 +1,193 @@
+cfs entry for: _26.fld
+doc 0
+  field 0
+    name index
+    type string
+    value 0
+END
+checksum 00000000003004046384
+cfs entry for: _26.inf
+number of fields 2
+  name index
+  number 0
+  index options DOCS_AND_FREQS_AND_POSITIONS
+  term vectors false
+  payloads false
+  norms true
+  doc values NONE
+  doc values gen -1
+  attributes 0
+  data dimensional count 0
+  index dimensional count 0
+  dimensional num bytes 0
+  soft-deletes false
+  name contenuto
+  number 1
+  index options DOCS
+  term vectors false
+  payloads false
+  norms false
+  doc values NONE
+  doc values gen -1
+  attributes 0
+  data dimensional count 0
+  index dimensional count 0
+  dimensional num bytes 0
+  soft-deletes false
+checksum 00000000001666838713
+cfs entry for: _26.len
+field index
+  type NUMERIC
+  minvalue 1
+  pattern 0
+0
+T
+END
+checksum 00000000003882396699
+cfs entry for: _26.pst
+field contenuto
+  term afeg
+    doc 0
+  term come
+    doc 0
+  term die
+    doc 0
+  term drink
+    doc 0
+  term dual
+    doc 0
+  term eat
+    doc 0
+  term fly
+    doc 0
+  term fmou
+    doc 0
+  term imaadaa
+    doc 0
+  term ina shan
+    doc 0
+  term kana shan
+    doc 0
+  term katab
+    doc 0
+  term kina shan
+    doc 0
+  term kmou
+    doc 0
+  term kuna shan
+    doc 0
+  term mou
+    doc 0
+  term muna shan
+    doc 0
+  term naktubu
+    doc 0
+  term nettafeg
+    doc 0
+  term nimaadnaa
+    doc 0
+  term plural
+    doc 0
+  term semou
+    doc 0
+  term singular
+    doc 0
+  term smou
+    doc 0
+  term suna shan
+    doc 0
+  term taktubna
+    doc 0
+  term taktubu
+    doc 0
+  term taktubāni
+    doc 0
+  term taktubīna
+    doc 0
+  term taktubūna
+    doc 0
+  term tamtíni
+    doc 0
+  term tamtínii
+    doc 0
+  term tamtíniya
+    doc 0
+  term tamáni
+    doc 0
+  term tamíni
+    doc 0
+  term tana shan
+    doc 0
+  term temou
+    doc 0
+  term tettafeg
+    doc 0
+  term tettafgem
+    doc 0
+  term tettafgemt
+    doc 0
+  term tettafgeḍ
+    doc 0
+  term tetənmou
+    doc 0
+  term timaadaa
+    doc 0
+  term timaadaan
+    doc 0
+  term timou
+    doc 0
+  term ttafgen
+    doc 0
+  term ttafgent
+    doc 0
+  term ttafgeɣ
+    doc 0
+  term támeen
+    doc 0
+  term támnay
+    doc 0
+  term támteena
+    doc 0
+  term tənmou
+    doc 0
+  term write
+    doc 0
+  term yaktubna
+    doc 0
+  term yaktubu
+    doc 0
+  term yaktubāni
+    doc 0
+  term yaktubūna
+    doc 0
+  term yana shan
+    doc 0
+  term yettafeg
+    doc 0
+  term yimaadaa
+    doc 0
+  term yimaadaan
+    doc 0
+  term ʼaktubu
+    doc 0
+field index
+  term 0
+    doc 0
+      freq 1
+      pos 0
+END
+checksum 00000000003146033158
+table of contents, size: 4
+  filename: _26.fld
+    start: 23
+    end: 116
+  filename: _26.inf
+    start: 139
+    end: 719
+  filename: _26.len
+    start: 742
+    end: 832
+  filename: _26.pst
+    start: 855
+    end: 2530
+table of contents begins at offset: 0000000000000002530
