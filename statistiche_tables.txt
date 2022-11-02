@@ -1,21 +1,17 @@
 Numero di tabelle:
 Numero totale di tabelle = 550271
 
-
-Numero medio di righe e colonne
+Numero medio di righe e colonne:
 Numero medio di righe= 17
 Numero medio di colonne= 3
-
-
 Fine elaborazione. Tempo impiegato: 212095ms
 
-Valori medi nulli
+Valori medi nulli:
 Numero medio nulli = 7
-
-
 Fine elaborazione. Tempo impiegato: 214881ms
 
-Distribuzione numero di righe
+
+Distribuzione numero di righe:
 40509 tabelle hanno 3 righe.
 42467 tabelle hanno 4 righe.
 53420 tabelle hanno 5 righe.
@@ -760,7 +756,8 @@ Distribuzione numero di righe
 1 tabelle hanno 1021 righe.
 1 tabelle hanno 2047 righe.
 
-Distribuzione numero di colonne
+
+Distribuzione numero di colonne:
 1 tabelle hanno 512 colonne.
 1220 tabelle hanno 1 colonne.
 247756 tabelle hanno 2 colonne.
@@ -887,10 +884,10 @@ Distribuzione numero di colonne
 1 tabelle hanno 239 colonne.
 34 tabelle hanno 499 colonne.
 
-
 Fine elaborazione. Tempo impiegato: 211724ms
 
-Distribuzione numero di valori differenti per colonna
+
+Distribuzione numero di valori differenti per colonna:
 125842 colonne hanno 1 valori distinti.
 239021 colonne hanno 2 valori distinti.
 242923 colonne hanno 3 valori distinti.
@@ -1679,6 +1676,5 @@ Distribuzione numero di valori differenti per colonna
 1 colonne hanno 1977 valori distinti.
 1 colonne hanno 2033 valori distinti.
 1 colonne hanno 2046 valori distinti.
-
 
 Fine elaborazione. Tempo impiegato: 222376ms
