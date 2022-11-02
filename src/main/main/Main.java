@@ -71,12 +71,11 @@ public class Main {
         writer.close();
 		
         Tabelle table = parser.parserJsonQuery();
+        MergeList mergeList = new MergeList();
+        
 		System.out.println("Esperimento con query: " + QUERY_NUMBER);			//chiave: documento, valore: numero di volte che matcha con la query
-
 		writerFile.writeOnFileQuery(QUERY_NUMBER);
 		
-		MergeList mergeList = new MergeList();
-		System.out.println("merge");
 		mergeList.mergeList(table.getMappaColonne().get(QUERY_NUMBER), directory);
 
 		directory.close();
