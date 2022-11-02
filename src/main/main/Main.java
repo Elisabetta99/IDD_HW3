@@ -64,7 +64,7 @@ public class Main {
 
         if(sc.equals("y") ) {
             Statistics stats = new Statistics(confPath);
-            stats.parserJsonTablesStatistics();
+            stats.calculateStats();
         } 
         scanner.close();
         
