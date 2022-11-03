@@ -80,7 +80,7 @@ public class Parser {
 
         FileInputStream fis = new FileInputStream("tabellaPerQuery.txt");       
         Scanner sc = new Scanner(fis);    //file da scansionare  
-        String line = sc.nextLine(); // :)
+        String line = sc.nextLine();
         Tabelle table = objectMapper.readValue(line, Tabelle.class);
         table.createCells();
         sc.close();
